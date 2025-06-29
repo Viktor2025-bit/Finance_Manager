@@ -7,7 +7,7 @@ class User extends Model {
   declare email: string;
   declare password: string;
   declare isVerified: boolean;
-  declare createdAat: Date;
+  declare createdAt: Date;
   declare updatedAt: Date;
 }
 

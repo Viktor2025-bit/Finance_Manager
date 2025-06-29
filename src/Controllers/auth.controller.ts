@@ -52,6 +52,7 @@ export const Register = async (
 
     logger.info("User registered", {
       userId: user.id,
+      token
     });
 
     res.status(201).json({
@@ -116,6 +117,7 @@ export const Login = async (
 
     logger.info("User logged in!", {
       userId: checkUser.id,
+      token
     });
 
     res.status(200).json({

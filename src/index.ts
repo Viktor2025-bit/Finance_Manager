@@ -8,6 +8,12 @@ import helmet from "helmet";
 import cors from "cors";
 import logger from "./Utils/logger";
 import authRouter from "./Routes/auth.routes";
+import transactionRouter from "./Routes/transaction.routes";
+import budgetRouter from "./Routes/budget.routes";
+import { startBudgetNotifications, startGoalNotification } from "./Utils/notifications";
+import goalRouter from "./Routes/goal.routes";
+import analyticsRouter from "./Routes/analytics.routes";
+import { Limiter } from "./Middlewares/rateLimiter.middleware";
 
 const app = express();
 
@@ -16,10 +22,14 @@ app.use(cookieParser());
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
-
+app.use(Limiter)
 
 // Routes
-app.use("/api/v1/user", authRouter)
+app.use("/api/v1/user", authRouter);
+app.use("/api/v1/transaction", transactionRouter);
+app.use("/api/v1/budget", budgetRouter);
+app.use("/api/v1/goal", goalRouter);
+app.use("/api/v1/analytics", analyticsRouter)
 
 // Health check
 app.get("/health", async (req: Request, res: Response) => {
@@ -62,8 +72,10 @@ app.listen(port, async () => {
     await sequelize.authenticate();
     logger.info("PostgreSQL connected!");
     await sequelize.sync({
-      force: true,
+      force: false,
     });
+    startBudgetNotifications();
+    startGoalNotification()
   } catch (error: any) {
     logger.error("PostgreSQL connection error :", {
       error: error.message,
