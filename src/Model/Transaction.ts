@@ -1,6 +1,5 @@
 import { DataTypes, Model } from "sequelize";
 import sequelize from "../Database/index";
-import Goal from "./Goal";
 
 class Transaction extends Model {
   declare id: number;

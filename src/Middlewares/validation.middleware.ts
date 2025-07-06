@@ -97,3 +97,19 @@ export const AnalyticsValidation = [
     .toDate()
     .withMessage("End date must be a valid ISO 8601 date"),
 ];
+
+export const subscriptionValidation = [
+  body("plan")
+    .isIn(["basic", "premium"])
+    .withMessage("Plan must be basic or premium"),
+
+  body("plan")
+    .optional()
+    .isIn(["basic", "premium"])
+    .withMessage("Plan must be basic or premium"),
+
+  body("status")
+    .optional()
+    .isIn(["active", "canceled", "pending"])
+    .withMessage("Invalid status"),
+];

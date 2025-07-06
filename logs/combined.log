@@ -187,3 +187,138 @@
 {"level":"info","message":"User logged in!","timestamp":"2025-06-29T08:59:46.834Z","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiZW1haWwiOiJwcmltZWtlbjM0QGdtYWlsLmNvbSIsImlhdCI6MTc1MTE4NzU4NiwiZXhwIjoxNzUxMTkxMTg2fQ.zJzLnm0r2LeMlQoqezUVe9DTNBXxSzbhkx3at-jlPww","userId":3}
 {"level":"info","message":"Transaction created","timestamp":"2025-06-29T09:03:49.585Z","transactionId":4,"userId":3}
 {"level":"info","message":"Transaction created","timestamp":"2025-06-29T09:05:58.418Z","transactionId":5,"userId":3}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-06-30T11:24:44.320Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-06-30T11:24:47.529Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-06-30T11:24:49.350Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-06-30T11:24:49.375Z"}
+{"level":"info","message":"User registered","timestamp":"2025-06-30T11:25:45.329Z","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzb2NoeTEwMUBnbWFpbC5jb20iLCJpYXQiOjE3NTEyODI3NDUsImV4cCI6MTc1MTI4NjM0NX0.TONcmDLikE0Mk3XN21TF88WTIyYJ8uZKXE3g-gzzuHQ","userId":4}
+{"level":"info","message":"User logged in!","timestamp":"2025-06-30T11:26:30.545Z","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiZW1haWwiOiJzb2NoeTEwMUBnbWFpbC5jb20iLCJpYXQiOjE3NTEyODI3OTAsImV4cCI6MTc1MTI4NjM5MH0.xUfDOUgUE7EbacyYZB7msXvT-4pdZxwxXAvOyzV8hK4","userId":4}
+{"level":"info","message":"Subscription created!","paymentIntentId":"pi_3RfpEJFS2WeSDdm816vtjRMw","plan":"premium","timestamp":"2025-06-30T11:27:54.952Z","userId":4}
+{"error":"Validation failed","level":"error","message":"Update subcription error :","timestamp":"2025-06-30T11:32:07.279Z"}
+{"error":"Validation failed","level":"error","message":"Unhandled error :","stack":"Error: Validation failed\n    at updateSubscription (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\src\\Controllers\\subscription.controller.ts:153:13)\n    at Layer.handleRequest (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\router\\lib\\route.js:157:13)\n    at middleware (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\express-validator\\lib\\middlewares\\check.js:16:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-30T11:32:07.530Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-06-30T11:34:47.163Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-06-30T11:34:47.801Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-06-30T11:34:48.427Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-06-30T11:34:48.466Z"}
+{"error":"Validation failed","level":"error","message":"Update subcription error :","timestamp":"2025-06-30T11:34:59.995Z"}
+{"error":"Validation failed","level":"error","message":"Unhandled error :","stack":"Error: Validation failed\n    at updateSubscription (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\src\\Controllers\\subscription.controller.ts:153:13)\n    at Layer.handleRequest (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\router\\lib\\route.js:157:13)\n    at middleware (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\express-validator\\lib\\middlewares\\check.js:16:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2025-06-30T11:35:00.095Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-03T13:34:59.975Z"}
+{"level":"info","message":"🚀 Server is running on http://localhost:7000","timestamp":"2025-07-03T13:35:00.146Z"}
+{"level":"info","message":"✅ PostgreSQL connected!","timestamp":"2025-07-03T13:35:01.931Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-07-03T13:35:06.965Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-07-03T13:35:07.215Z"}
+{"level":"info","message":"🛑 SIGINT received. Shutting down...","timestamp":"2025-07-04T02:55:58.469Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T02:58:27.537Z"}
+{"level":"info","message":"🚀 Server is running on http://localhost:7000","timestamp":"2025-07-04T02:58:27.699Z"}
+{"level":"info","message":"✅ PostgreSQL connected!","timestamp":"2025-07-04T02:58:32.613Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-07-04T02:58:33.980Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-07-04T02:58:34.034Z"}
+{"error":"Unexpected token '\"', \"\"{\\r\\n    \"... is not valid JSON","level":"error","message":"Unhandled error:","stack":"SyntaxError: Unexpected token '\"', \"\"{\\r\\n    \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at createStrictSyntaxError (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\body-parser\\lib\\types\\json.js:156:10)\n    at parse (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\body-parser\\lib\\types\\json.js:71:15)\n    at C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\body-parser\\lib\\read.js:123:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)\n    at invokeCallback (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\Viktorrrr!\\Desktop\\Personal_Finance_Manager\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at IncomingMessage.emit (node:domain:489:12)","timestamp":"2025-07-04T03:15:55.300Z"}
+{"level":"info","message":"🛑 SIGINT received. Shutting down...","timestamp":"2025-07-04T03:16:59.567Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T03:18:26.761Z"}
+{"level":"info","message":"🚀 Server is running on http://localhost:7000","timestamp":"2025-07-04T03:18:26.808Z"}
+{"level":"info","message":"✅ PostgreSQL connected!","timestamp":"2025-07-04T03:18:28.061Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-07-04T03:18:28.744Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-07-04T03:18:28.791Z"}
+{"level":"info","message":"🛑 SIGINT received. Shutting down...","timestamp":"2025-07-04T03:39:19.044Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T03:42:16.638Z"}
+{"level":"info","message":"🚀 Server is running on http://localhost:7000","timestamp":"2025-07-04T03:42:16.761Z"}
+{"level":"info","message":"✅ PostgreSQL connected!","timestamp":"2025-07-04T03:42:17.921Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-07-04T03:42:18.391Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-07-04T03:42:18.482Z"}
+{"level":"info","message":"🛑 SIGINT received. Shutting down...","timestamp":"2025-07-04T03:49:56.808Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T03:50:52.208Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T04:01:12.397Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T04:17:18.992Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T04:18:48.321Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T04:19:59.022Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T04:20:48.948Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T04:22:00.310Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T04:23:19.054Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T04:24:31.855Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T09:41:47.604Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T09:42:30.995Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T09:43:11.776Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T09:44:03.981Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T09:47:49.757Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T11:06:32.636Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T11:13:01.437Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T11:13:39.210Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T22:36:25.714Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-04T22:36:57.861Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-04T23:00:28.937Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-04T23:00:29.809Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-04T23:01:43.651Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-04T23:01:44.341Z"}
+{"level":"info","message":"User registered","timestamp":"2025-07-04T23:04:45.365Z","userId":1}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-04T23:24:37.567Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-04T23:24:38.340Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:25:08.903Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:25:09.595Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:26:09.019Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:26:09.842Z"}
+{"level":"info","message":"Server is running on http://localhost:9000","timestamp":"2025-07-05T00:27:17.876Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:27:18.625Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:29:51.457Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:29:52.565Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:32:45.924Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:32:46.521Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:35:32.316Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:35:32.997Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:36:33.836Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:36:34.474Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:42:10.846Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:42:11.530Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:44:19.750Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:44:20.353Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:47:58.914Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:47:59.704Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T00:48:52.742Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:48:52.833Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:48:53.501Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T00:50:49.063Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:50:49.118Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:50:49.733Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T00:52:17.632Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:52:17.684Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:52:18.472Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T00:54:35.228Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:54:35.284Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:54:35.965Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T00:59:14.121Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T00:59:14.175Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T00:59:14.749Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T01:01:09.396Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T01:01:09.452Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T01:01:10.034Z"}
+{"level":"info","message":"User registered","timestamp":"2025-07-05T01:01:30.075Z","userId":1}
+{"level":"info","message":"User logged in!","timestamp":"2025-07-05T01:01:44.482Z","userId":1}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T01:03:51.408Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T01:03:51.461Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T01:03:52.051Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T01:07:18.902Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T01:07:18.969Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T01:07:19.550Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-07-05T01:07:20.514Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-07-05T01:07:20.554Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T01:09:12.586Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T01:09:12.644Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T01:09:13.214Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-07-05T01:09:14.195Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-07-05T01:09:14.217Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T01:11:00.667Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T01:11:00.725Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T01:11:01.337Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-07-05T01:11:02.326Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-07-05T01:11:02.347Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T01:15:23.087Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T01:15:23.169Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T01:15:23.960Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-07-05T01:15:25.198Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-07-05T01:15:25.225Z"}
+{"level":"info","message":"Sentry initialized","timestamp":"2025-07-05T01:21:45.219Z"}
+{"level":"info","message":"Server is running on http://localhost:7000","timestamp":"2025-07-05T01:21:45.310Z"}
+{"level":"info","message":"PostgreSQL connected!","timestamp":"2025-07-05T01:21:46.148Z"}
+{"level":"info","message":"Budget notification scheduler started","timestamp":"2025-07-05T01:21:47.381Z"}
+{"level":"info","message":"Goals notification scheduler started","timestamp":"2025-07-05T01:21:47.439Z"}
+{"level":"info","message":"User registered","timestamp":"2025-07-05T01:22:55.360Z","userId":1}

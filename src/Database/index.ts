@@ -6,7 +6,7 @@ import { Sequelize } from "sequelize"
 const DATABASE_URI = process.env.DATABASE_URI
 
 const sequelize = new Sequelize(DATABASE_URI!, {
-    logging : console.log
+    logging : false
 })
 
 export default sequelize

@@ -4,7 +4,6 @@ import { Subscription, User } from "../Model";
 import logger from "../Utils/logger";
 import { AppError } from "../Utils/error";
 import { validationResult } from "express-validator/";
-import { error } from "console";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2025-05-28.basil",
@@ -199,4 +198,65 @@ export const updateSubscription = async (
   }
 };
 
+export const handleStripeWebhook = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const sig = req.headers["stripe-signature"] as string;
 
+    const event = stripe.webhooks.constructEvent(
+      req.body,
+      sig,
+      process.env.STRIPE_WEBHOOK_SECRET!
+    );
+
+    switch (event.type) {
+      case "payment_intent.succeeded":
+        const paymentIntent = event.data.object as Stripe.PaymentIntent;
+        const userId = parseInt(paymentIntent.metadata.userId);
+        const plan = paymentIntent.metadata.plan as "basic" | "premium";
+
+        const subscription = await Subscription.findOne({
+          where: {
+            userId,
+          },
+        });
+        if (subscription) {
+          await subscription.update({
+            status: "active",
+            plan,
+          });
+          logger.info("Subscription activated", {
+            userId,
+            plan,
+          });
+        }
+        break;
+
+      case "payment_intent.payment_failed":
+        logger.warn("Payment failed", {
+          paymentIntentId: (event.data.object as Stripe.PaymentIntent).id,
+        });
+
+        break;
+
+      default:
+        logger.info("Unhandled Stripe event", {
+          eventType: event.type,
+        });
+    }
+    res.status(200).json({
+      recieved: true,
+    });
+  } catch (error: any) {
+    logger.error("Webhook error :", {
+      error: error.message,
+    });
+    res.status(400).json({
+      success: false,
+      message: "Webhook error",
+    });
+  }
+};

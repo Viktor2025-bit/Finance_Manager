@@ -150,7 +150,7 @@ export const checkGoals = async () => {
 
       // Mark completed goal
       if (progressPercentage >= 100 && goal.status === "active") {
-        // Find the actual Sequelize instance to update it
+        // Find the actual Sequelize instance to update it 
         const goalInstance = goals.find((g) => g.id === goal.id);
         if (goalInstance) {
           await goalInstance.update({ status: "completed" });

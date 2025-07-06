@@ -36,6 +36,7 @@ export const createBudget = async (
       },
     });
 
+
     if (existingBudget) {
       throw new AppError(
         `Budget already exists for this ${category}, ${amount}, ${month}, ${year}`,
